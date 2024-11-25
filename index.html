@@ -2,80 +2,277 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Gastons personal site</title>  
-
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaston's house</title>
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <table cellspacing="20">
-        <tr>
-            <td><img src="perfil2.png" alt="imagen de perfil"></td>
-             <td> <h1>Sitio de Gaston</h1>
-                <p><em>hecha un vistaso a <strong><a href="https://www.facebook.com/gastonenrrique.ovandolimpias">mi perfil</a></strong></em></p>
-            
-                <p>Este es un sitio web que estoy creando para mi progreso como profesional y estoy tomando un curso de programacion web</p>
-            </td>  
-        </tr>
-    </table>
+<div class="header_2">
+    <div class="container">
+    <nav>
+        <img src="images/logo.png" class="logo">
+        <ul id="sidemenu">
+            <li><a href="#header">Inicio</a></li>
+            <li><a href="#about">Información</a></li>
+            <li><a href="#portfolio">Experiencia</a></li>
+            <li><a href="#services">Proyectos</a></li>
+            <li><a href="#contact">Contactos</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+    </nav>
+    </div>
+</div>
+<div id="header">
+    <div class="container">
+        <div class="header-text">
+            <h1>Hola! <br>soy<span> Gaston</span><br>Ingeniero de sistemas<br> de Bolivia</h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/perfil2.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">Acerca de mi</h1>
+                <p>Ingeniero de Sistemas apasionado por el desarrollo de soluciones innovadoras en el campo de la ingeniería de software. Soy una persona motivada por mis objetivos, siempre en busca de expandir mis conocimientos y desarrollar nuevas habilidades. Me destaco por mi proactividad, organización y responsabilidad, lo que me permite cumplir eficientemente con mis labores. Disfruto trabajar en equipo y me considero una persona abierta, disciplinada y comprometida con mis metas. Actualmente, busco una oportunidad laboral a tiempo completo o parcial que me permita ganar experiencia y fortalecer mis aptitudes en mi especialidad.</p>
 
-    <hr>
-    <h3>Cursos Realizados</h3>
-    <UL>
-        <li>Titulo universitario en ing. de sistemas en la Emi</li>
-        <li>curso de programacion web</li>
-        <li>curso de reparacion de laptops</li>
-    </UL>
-    <hr>
-    <h3>Hobbies</h3>
-    <ol>
-        <li>Me gusta ver peliculas</li>
-        <li>me gusta jugar futbol</li>
-        <li>me gusta jugar fronton</li>
-    </ol>
-    <hr>
-    <h3>CURSOS</h3>
-    <table>
-        <tr>
-            <td><strong>cursos</strong></td>
-            <td><strong>horas</strong></td>
-        </tr>
-        <tr>
-            <td>curso de reparacion de laptops</td>
-            <td>148 hr </td>
-        </tr>
-        <tr>
-            <td>curso de programacion web</td>
-            <td>65 hr</td>
+                <div class="tab-titles">
 
-        </tr>
-    </table>
+                    <p class="tab-links active-link" onclick="opentab('skills')"><b>Skills</b></p>
+                    <p class="tab-links" onclick="opentab('Languages')"><b>Idiomas</b></p>
+                    <p class="tab-links" onclick="opentab('education')"><b>Educación</b></p>
 
-    <hr>
-    <h3>Skills</h3>
-    <table cellspacing="20">
-        <tr>
-            <td><strong>Habilidades</strong></td>
-            <td><strong>Puntuacion</strong></td>
-        </tr>
-        <tr>
-            <td>Unity 3d</td>
-            <td><p>&#11088; &#11088; &#11088; &#11088;</p></td>
-        </tr>
-        <tr>
-            <td>blender</td>
-            <td>&#11088; &#11088; &#11088;</td>
-        </tr>
-        <tr>
-            <td>html</td>
-            <td>&#11088; &#11088; &#11088; &#11088;</td>
-        </tr>
-        <tr>
-            <td>javascript</td>
-            <td>&#11088;</td>
-        </tr>
-    </table>
-    <hr>
-    <h3><a href="contactos.html">Contactame</a></h3>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span><i class="fa-regular fa-user-gear"></i> Lenguajes de Programación</span><br>JavaScript / TypeScript / SQL / React</li>
+                        <li><span><i class="fa-regular fa-user-gear"></i> Herramientas</span><br>Kanban, SCRUM, Git, GitHub, Adobe Photoshop, Sketch </li>
+                        <li><span><i class="fa-regular fa-user-gear"></i> Cursos importantes</span><br>Programacion orientada a objetos / programacion con React / programacion con JavaScript / TypeScript / Mantenimiento y reparación de laptops 
+                        <li><span><i class="fa-regular fa-user-gear"></i> Aprendiendo</span><br>DevOps / Python </li>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Languages">
+                    <ul>
+                        <li><span><i class="fa-solid fa-globe"></i> Español</span><br> Idioma nativo</li>
+                        <li><span><i class="fa-solid fa-globe"></i> Ingles</span><br>Certificado de ingles regido por el CEFR 
+                            (Marco Común Europeo de Referencia 
+                            para las lenguas), UPPER- INTERMEDIATE 
+                            Nivel B2 </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span><i class="fa-solid fa-graduation-cap"></i> Escuela Militar de Ingenieria</span><br><span2> Finalización: 2022</span2> </li>
+                        <li><i class="fa-solid fa-arrow-right"></i> Certificados<br>Mantenimiento y Reparación de Laptops (80 hrs), Programación con JavaScript y React (64 hrs), JavaScript Essentials por Cisco (64 hrs)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Experiencia</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/sistemas.jpg">
+                <div class="layer">
+                    <h3>Desarrollador en Aplicaciones Web con TypeScript, React</h3>
+                    <h4>Ago 2024 — Presente</h4>
+                    <p>implementé tecnologías modernas y prácticas de desarrollo, logrando construir soluciones escalables y robustas en proyectos significativos para una empresa de desarrollo, incluyendo:</p>
+                    <ul>
+                        <li>Sistema de Avalúos: Optimicé la gestión y análisis de datos.</li>
+                        <li>Plataforma Integral para una Distribuidora de Autopartes: Mejoré la gestión de inventarios y ventas.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/misicuni3.jpg">
+                <div class="layer">
+                    <h3>Prácticas Empresariales en SEMAPA</h3>
+                    <h4>Ago 2021 - Nov 2021</h4>
+                    <ul>
+                        <li>Apoyo en el manejo de bases de datos y asistencia al departamento de sistemas.</li>
+                        <li>Elaboración de reportes completos de activos fijos (equipos y software informático).</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/estadistica3.jpg">
+                <div class="layer">
+                    <h3>Jefe de Zona Instituto Nacional de Estadística INE</h3>
+                    <h4>Ene 2024 - Mar 2024</h4>
+                    <p>Experiencia en gestión de entornos y coordinación de equipos.</p>
+                </div>
+            </div>
+        </div>
+        <a href="javascript:void(0)" id="showExtracurriculars" class="btn">Ver Extracurriculares</a>
 
-    
+    </div>
+</div>
+<div id="extracurriculars" style="display: none;">
+    <div class="container">
+        <h1 class="sub-title">Extracurriculares</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/cine.jpg">
+                <div class="layer">
+                    <h3>Prime Cinemas cargo: Staff/Personal </h3>
+                    <h4>Enero 2019 - Marzo 2022</h4>
+                    <ul>
+                        <li>Recepción de clientes </li>
+                        <li>Asistencia en áreas: ventas de Candy Bar, ventas de Boletería, 
+                            alquiler de consolas y venta de créditos de Nice One.</li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/organizador.jpg">
+                <div class="layer">
+                    <h3> organizador de FESA</h3>
+                    <h4>May 2023</h4>
+                    <ul>
+                        <li>Organización y planificación.</li>
+                        <li>Apoyo en el proceso de aprendizaje de talleres. </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/mesero.jpg">
+                <div class="layer">
+                    <h3>Mesero</h3>
+                    <h4>Marzo 2022 and Noviembre 2023</h4>
+                    <p>Trabajé como mesero en un bar-restaurante, donde adquirí experiencia en atención al cliente, manejo de comandas y trabajo bajo presión. Aprendí a coordinarme con el equipo, mantener una actitud amable y resolver problemas rápidamente. Disfruté brindar un servicio eficiente, contribuyendo a crear una experiencia positiva para los clientes. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------services---------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Proyectos</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-puzzle-piece"></i>
+                <h2>Simulador 3D del Proceso de Producción de Yogurt | Unity 3D, Blender, C#</h2>
+                <a href="javascript:void(0)"  onclick= "toggleParagraph('Akinator')" >More about</a>
+                <p id='Akinator'style="display: none;">Desarrollé un simulador 3D que representa el proceso completo de producción de yogurt, utilizando Unity 3D y Blender para modelar y animar escenarios. Implementé la lógica y las interacciones del sistema con C#, combinando diseño 3D y programación avanzada.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-table-cells"></i>
+                <h2>Aplicación Web para Lenguaje de Señas Boliviano | HTML, CSS, JavaScript</h2>
+                <a href="javascript:void(0)"  onclick= "toggleParagraph('Sudoku')" >More about</a>
+                <p id='Sudoku'style="display: none;">Diseñé una aplicación web inclusiva para facilitar el aprendizaje del lenguaje de señas boliviano, especialmente para personas sordomudas. La interfaz accesible promueve la inclusión social mediante la tecnología.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-chart-simple"></i>
+                <h2>Aplicación Web Interactiva de Batería Virtual | HTML, CSS, JavaScript</h2>
+                <a href="javascript:void(0)"  onclick= "toggleParagraph('stats')" >More about</a>
+                <p id='stats' style="display: none;">Implementé una aplicación web donde los usuarios pueden reproducir sonidos de instrumentos al presionar teclas o hacer clic en íconos. Este proyecto combina creatividad y funcionalidad para ofrecer una experiencia dinámica y entretenida. </p>
+            </div>
+            <div>
+                <i class="fa-solid fa-link"></i>
+                <h2>Aplicación Web sobre Curiosidades de Gatos | React, CSS, API REST</h2>
+                <a href="javascript:void(0)"  onclick= "toggleParagraph('hackaton')" >More about</a>
+                <p id='hackaton'style="display: none;">Desarrollé una aplicación que consume una API para mostrar imágenes y datos curiosos sobre gatos, permitiendo a los usuarios guardar contenido favorito. Demostré habilidades en el consumo de APIs y la creación de interfaces modernas y atractivas.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contactos</h1>
+                <p><i class="fas fa-paper-plane"></i> <a href="mailto:gaston.kiara1@gmail.com"style="color: white">gaston.kiara1@gmail.com</a></p>
+                <p><i class="fas fa-phone-square-alt"></i> <a href="tel:+59176911144" style="color: white">+591 76911144</a></p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/gaston-ovando-bb0b68241/"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="images/Gaston Ovando CV-prueba.pdf" download class="btn btn2">Descargar CV</a>
+            </div>
+            <div class="contact-right">
+                <h2>Contáctame</h2>
+                <form action="https://formsubmit.co/gaston.kiara1@gmail.com" method="POST">
+                    <input type="text" name="Name" placeholder="*Name" required>
+                    <input type="email" name="Email" placeholder="*Email" required>
+                    <input type="tel" name="Phone" placeholder="Phone" required>
+                    <textarea name="Message" rows="6" placeholder="Message"></textarea>
+                    <button type="submit" class="btn btn2">Enviar</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+
+<script>
+</script>
+<script>
+    function toggleParagraph(paragraphId) {
+        var paragraph = document.getElementById(paragraphId);
+
+        if (paragraph.style.display === 'none') {
+            paragraph.style.display = 'block'; // Show the paragraph
+        } else {
+            paragraph.style.display = 'none'; // Hide the paragraph if it's already visible
+        }
+    }
+</script>
+<script>
+    document.getElementById('showExtracurriculars').addEventListener('click', function() {
+        var div = document.getElementById('extracurriculars');
+        div.style.display = 'block'; // Show the div when the button is clicked
+    });
+</script>
 </body>
 </html>
